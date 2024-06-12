@@ -1,47 +1,74 @@
-# Svelte + Vite
 
-This template should help get you started developing with Svelte in Vite.
+<!-- HEADER -->
+<br />
+<div align="center">
 
-## Recommended IDE Setup
+  <h3 align="center">Toast Notifications</h3>
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+  <p align="center">
+    A simple app to practice Svelte Frontend Framework
+    Course from Educative.io 
+    <br />
+  </p>
+</div>
 
-## Need an official Svelte framework?
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
 
-## Technical considerations
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-**Why use this over SvelteKit?**
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
 
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+<!-- ABOUT THE PROJECT -->
+## About The Project
+<div align="center">
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+</div>
+<br/>
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+- **Utilizes a store to manage and update notifications**
+- **Uses promises to mimic asynchronous operations**
+- **Fly animation for smooth transition of notifications** 
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-**Why include `.vscode/extensions.json`?**
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
 
-**Why enable `checkJs` in the JS template?**
+### Built With
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=svelte,vite,docker" />
+  </a>
 
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
 
-**Why is HMR not preserving my local component state?**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
 
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
+<!-- USAGE EXAMPLES -->
+## Usage
+<div align="center">
+<img width="1662" alt="Screenshot 2024-06-11 at 4 30 39 PM" src="https://github.com/eewwalker/toastNotifications/assets/114313334/a1499621-6b61-4f3a-93c5-db4881b8729a">
+<p> Notifications for both success and failure </p>
+<br/>
+<img width="1662" alt="Screenshot 2024-06-11 at 4 30 57 PM" src="https://github.com/eewwalker/toastNotifications/assets/114313334/cdffed8a-d247-4a46-8eb2-39b974afea05">
+<img width="1662" alt="Screenshot 2024-06-11 at 4 31 13 PM" src="https://github.com/eewwalker/toastNotifications/assets/114313334/8694a998-c249-43bd-ad05-47a6342a1456">
+<p> Asynchronous Operations with fly animation for smooth transitions </p>
+  
+</div>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+Course available on [Educative.io](https://www.educative.io/projects/build-a-toast-notification-system-with-svelte)
